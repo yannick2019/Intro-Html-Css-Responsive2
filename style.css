@@ -1,0 +1,53 @@
+main #small, main #medium, main #large {
+    display: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+    main #large {
+        display: block;
+    }
+
+    main #large h2 {
+        font-size: 3rem;
+    }
+    
+    main #large p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    main #medium {
+        display: block;
+    }
+
+    main #medium h2 {
+        font-size: 2rem;
+    }
+    
+    main #medium p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    main #small {
+        display: block;
+    }
+
+    main #small h2 {
+        font-size: 1.4rem;
+    }
+    
+    main #small p {
+        font-size: 0.9rem;
+    }
+
+    main #medium {
+        display: none;
+    }
+}
+
+
+
